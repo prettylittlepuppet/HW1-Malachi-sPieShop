@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float number_of_pies, cups_of_flour, tbsp_of_sugar, tbsp_of_salt, cups_of_butter, large_eggs;
+	float one_pie, new_recipe, flour_for_one, sugar_for_one, salt_for_one, butter_for_one, eggs_for_one;
+
+	//number of pies
+	cout << "Welcome to Malachi's Pie Shop.\n";
+	cout << "How many pies do you wish to make? ";
+	cin >> number_of_pies;
+	//recipe for 6 pies 
+	cups_of_flour = 15;
+	tbsp_of_sugar = 8;
+	tbsp_of_salt = 3;
+	cups_of_butter = 5.25;
+	large_eggs = 6;
+	//recipe for 1 pie (im trying so hard to make this work)
+	flour_for_one = cups_of_flour / 6;
+	sugar_for_one = tbsp_of_sugar / 6;
+	salt_for_one = tbsp_of_salt / 6;
+	butter_for_one = cups_of_butter / 6;
+	eggs_for_one = large_eggs / 6;
+	one_pie = flour_for_one + sugar_for_one + salt_for_one + butter_for_one + eggs_for_one;
+	//recipe for number_of_pies (struggling)
+	new_recipe = one_pie * number_of_pies;
+	//returning info to user
+	cout << "Now making " << number_of_pies << " pies.\n" << endl;
+	//displaying new recipe
+	cout << "Cups of Flour - " << flour_for_one * number_of_pies << endl;
+	cout << "Tablespoons of Sugar - " << sugar_for_one * number_of_pies << endl;
+	cout << "Tablespoons of Salt - " << salt_for_one * number_of_pies << endl;
+	cout << "Cups of Butter - " << butter_for_one * number_of_pies << endl;
+	cout << "Large Eggs - " << eggs_for_one * number_of_pies << endl;
+	//it is working and i really hope this outputs properly or im gonna rage
+	//fyi i hate irma for making my computer crash multiple times and not allowing me to work
+	//so this actually works in the prompt but has 507 errors :,) why 
+	//it works now thank god 9-19-17
+	return 0;
+
+}
